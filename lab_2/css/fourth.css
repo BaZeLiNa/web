@@ -1,0 +1,118 @@
+/* .fourth{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/images/image_4.png");
+    background-size: 35.5%;
+    margin-left: 5%;
+    background-position: left center;
+} */
+
+.container_fourth{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    align-items: center;
+}
+
+.fourth_img img{
+    width: 400px;
+    height: 400px;
+}
+
+.fourth__nav ul{
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
+    grid-gap: 37px 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.fourth__header{
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 23px;
+    color: #222F33;
+    margin-bottom: 4px;
+}
+
+.fourth__paragraph{
+    margin: 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: #646D70;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* .fourth {
+        justify-content: center;
+        display: flex;
+    } */
+
+    .container_fourth{
+        display: block;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourth_img img{
+        width: 320px;
+        height: 320px;
+    }
+    
+    .fourth__nav ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 5%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .fourth__header {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .fourth__paragraph {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
+@media screen and (min-width: 1500px){
+    .container_fourth{
+        margin-top: 250px;
+        margin-bottom: 250px;
+    }
+    
+    .fourth__header{
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .fourth_img img{
+        width: 800px;
+        height: 800px;
+    }
+
+    .fourth__paragraph{
+        width: 400px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .fourth__nav ul{
+        grid-template-columns: repeat(2, 400px);
+        grid-gap: 60px 150px;
+    }
+    .fourth__nav ul li{
+        width: 400px;
+    }
+}

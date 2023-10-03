@@ -1,6 +1,5 @@
 body {
     font-family: 'Rubik', sans-serif;
-    max-width: 1000px;
     margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -11,6 +10,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
+    font-size: 2rem; 
 }
 
 a{

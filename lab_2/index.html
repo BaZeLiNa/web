@@ -14,21 +14,24 @@
     <section class="hero">
         <div class="container">
             <header class="header">
-                <img class="logo" src="./images/logo.png" alt="logo">
-                <nav class="header__nav">
+                <div class="header__menu" onclick="toggleMenu()">
+                    <img src="/images/menu-icon.png" alt="menu">
+                </div>
+                <img class="logo" src="/images/logo.png" alt="logo">
+                <nav id="nav-links" class="header__nav">
                     <ul>
-                        <li class="header__nav-item"><a href="">Modellen</a></li>
-                        <li class="header__nav-item"><a href="">Kopen</a></li>
-                        <li class="header__nav-item"><a href="">Huren</a></li>
-                        <li class="header__nav-item"><a href="">Nieuws</a></li>
+                        <li class="header__nav-item"><a href="/index.html">Modellen</a></li>
+                        <li class="header__nav-item"><a href="/index.html">Kopen</a></li>
+                        <li class="header__nav-item"><a href="/index.html">Huren</a></li>
+                        <li class="header__nav-item"><a href="/index.html">Nieuws</a></li>
                     </ul>
                 </nav>
-                <button class="header__contact">Contact</button>
+                <a class="header__contact" href="/index.html">Contact</a>
             </header>
         </div>
         <div class="container_hero">
             <div class="hero__inner">
-                <div class="hero_text">
+                <div class="hero__text">
                     <p class="hero__paragraph">Sustainable tiny houses</p>
                     <h2 class="hero__title">
                         An ecological tiny house is
@@ -37,7 +40,9 @@
                         materials as possible
                     </h1>
                 </div>
-                <img src="./images/image_2023-09-27_21-56-41.png" alt="Play video" class="button">
+                <a href="/index.html">
+                    <img src="/images/image_2023-09-27_21-56-41.png" alt="Play video" class="button">
+                </a>
             </div>
         </div>
     </section>
@@ -54,7 +59,7 @@
                 is light, flexible, insulates well and builds quickly
                 and efficiently.
             </p>
-            <button class="second__button">Read more</button>
+            <a class="second__button" href="/index.html">Read more</a>
         </div>
     </section>
     <section class="third">
@@ -88,7 +93,10 @@
     </section>
     <section class="fourth">
         <div class="container_fourth">
-            <nav class="fourth__nav">
+            <div class="fourth_img">
+                <img src="./images/image_4.png" alt="house_img">
+            </div>
+            <div class="fourth__nav">
                 <ul>
                     <li>
                         <h3 class="fourth__header">Wood</h3>
@@ -133,23 +141,24 @@
                         </p>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </section>
     <section class="end">
         <div class="container_end">
             <footer class="footer">
-                <a class="footer__email" href="">info@eco-cabins.com</a>
-                <img src="./images/logo.png" alt="logo">
+                <a class="footer__email" href="mailto:info@eco-cabins.com">info@eco-cabins.com</a>
+                <img src="/images/logo.png" alt="logo">
                 <nav class="footer__nav">
                     <ul>
-                        <li class="footer__nav-item"><a href="">Cookies</a></li>
-                        <li class="footer__nav-item"><a href="">Privacybeleid</a></li>
+                        <li class="footer__nav-item"><a href="/index.html">Cookies</a></li>
+                        <li class="footer__nav-item"><a href="/index.html">Privacybeleid</a></li>
                     </ul>
                 </nav>
             </footer>
         </div>
     </section>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
