@@ -1,0 +1,23 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li{
+    display: block;
+}

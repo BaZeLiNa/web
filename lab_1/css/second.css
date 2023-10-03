@@ -1,0 +1,39 @@
+.second {
+    background-image: url("/images/background_2.png");
+    background-repeat: no-repeat;
+    background-position: right 9% top;
+    background-size: contain;
+    padding-bottom: 7%;
+}
+
+.container_second{
+    width: 40%;
+    padding-left: 10%;
+}
+
+.second__title{
+    padding-top: 55px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 38px;
+    color: #222F33;
+}
+
+.second__paragraph{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #646D70;
+}
+
+.second__button{
+    background-color: #fff;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #606B74;
+    padding: 10px;
+    width: 90px;
+    border: 1px solid #646D70;
+}

@@ -1,0 +1,15 @@
+@import "./normalize.min.css";
+
+@import "./globals.css";
+
+@import "./hero.css";
+
+@import "./header.css";
+
+@import "./second.css";
+
+@import "./third.css";
+
+@import "./fourth.css";
+
+@import "./end.css";
