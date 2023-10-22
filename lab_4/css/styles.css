@@ -1,0 +1,187 @@
+.logo{
+    min-width: 100px;
+    max-height: 38px;
+    margin-top: 5px;
+  }
+  
+
+  .my_books{
+    text-decoration: none;
+    color: #4F5665;
+    min-width: 100px;
+    max-height: 24px;
+    margin-top: 5px;
+  }
+  
+  .create_books{
+    text-decoration: none;
+    color: #4F5665;
+    min-width: 100px;
+    max-height: 24px;
+    margin-top: 5px;
+  }
+  
+  .horizontal_block{
+    border: none;
+    background-color: #4F5665;
+    color: #4F5665;
+    height: 0.5px;
+    width: 100%;
+  }
+  
+  form#add_form.bg-light{
+    border-right: 0.5px solid #4F5665;
+    height: 100%;
+  }
+
+  .button_search{
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .button_clear{
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ec1414;
+    border: 1px solid #ec1414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mb-3{
+    display: flex;
+  }
+  
+  .switch {
+    margin-left: 25px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+    
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .button_count{
+    background-color: #2196F3;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+   
+  .edit{
+    border-radius: 10px;
+    width: 75px;
+  }
+
+  .first_book{
+    border: 0.5px solid #4F5665;
+    border-radius: 10px;
+    background: #FFFFFF;
+    width: 120px;
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 7px;
+  }
+
+
+
+
+
+.input_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_section > input{
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.input_section > select{
+  margin-bottom: 40px;
+  width: 250px;
+  text-align: center;
+}
+
+.create_button{
+  background-color: #2196F3;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 250px;
+}
+
+
