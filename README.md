@@ -10,7 +10,12 @@
 Посилання на вітку [тут](https://github.com/BaZeLiNa/web/tree/lab_2)
 
 ***
-### Лабораторна робота №3 (Варіант 6)
-Посилання на вітку [тут](https://google.com)
+### Лабораторна робота №3 (Варіант X)
+Посилання на вітку [тут](https://github.com/BaZeLiNa/web/tree/lab_3)
+
+***
+
+### Лабораторна робота №4 (Варіант X)
+Посилання на вітку [тут](https://github.com/BaZeLiNa/web/tree/lab_4)
 
 ***

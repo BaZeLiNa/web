@@ -34,7 +34,7 @@
                 <a href="index.html" class="my_books" id="my_books">
                   My books
                 </a>
-                <a href="index.html" class="create_books" id="create_books">
+                <a href="create.html" class="create_books" id="create_books">
                   Create book
                 </a>
               </div>
@@ -92,7 +92,20 @@
 
         <ul id="objects_section" class="col-md-8">
         </ul>
-        
+        <div class="input_section">
+          <label>Enter the number of pages </label>
+          <input type="number" id="pages_input" min="1">
+          <label>Enter price of book</label>
+          <input type="number" id="price_input" min="1">
+          <label>Chose author</label>
+          <select id="author_input" name="authors"> 
+              <option value="John">John</option>
+              <option value="Stepan">Stepan</option>
+              <option value="Ivan">Ivan</option>
+              <option value="Antony">Antony</option>
+            </select>
+          <button id="create_button" class="create_button">Create</button>
+      </div>
       </div>
     </div>
 
