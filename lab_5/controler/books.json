@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "pages": "400",
+    "author": "Joe",
+    "price": "30"
+  },
+  {
+    "id": 2,
+    "pages": 133,
+    "author": "John",
+    "price": 34
+  },
+  {
+    "id": 3,
+    "pages": "50",
+    "author": "Antony",
+    "price": "20"
+  }
+]
