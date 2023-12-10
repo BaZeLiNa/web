@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+  </head>
+  
+  <body>
+    <header id="header" class="header">
+      <div class="main-header">
+        <div class="container p-3">
+          <div class="row mb-3">
+            <div class="logo col-md-1">
+              MY LIBRARY
+            </div>
+            <div class="col-md-3">
+              <div class="tabs">
+                <a href="index.html" class="my_books" id="my_books">
+                  My books
+                </a>
+                <a href="create.html" class="create_books" id="create_books">
+                  Create book
+                </a>
+              </div>
+            </div>
+            <div class="col-md-5 d-flex justify-content-end">
+              <input id="search_input" type="text" class="form-control" placeholder="Type author name"/>
+            </div>
+            <div class="col-md-1">
+              <button id="search_button" type="button" class="button_search">
+                Search
+              </button>
+            </div>
+            <div class="col-md-1">
+              <button id="clear_button" type="button" class="button_clear">
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-md-3 mt-2">
+          <form id="add_form" class="bg-light">
+            <h3 class="mb-3">Manage books</h3>
+            <div class="mb-3">
+              <label id="search_label" class="form-label">
+                Sort by price </label>
+              <label class="switch">
+                <input id="sort_switch" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="mb-3">
+              <div class="horizontal_block"></div>
+            </div>
+            <div class="mb-3">
+              <label id="count_label" class="form-label">Count total price of the books:</label>
+            </div>
+            <div class="mb-3">
+              <button id="count_button" type="button" class="button_count">
+                Count
+              </button>
+            </div>
+            <div class="mb-3">
+              <label id="count_result_label" class="count_result_label">
+                Total price:
+              </label>
+              <span id="result">0$</span>
+            </div>
+          </form>
+        </div>
+
+        <ul id="objects_section" class="col-md-8">
+        </ul>
+        <div class="input_section">
+          <label>Enter the number of pages </label>
+          <input type="number" id="pages_input" min="1">
+          <label>Enter price of book</label>
+          <input type="number" id="price_input" min="1">
+          <label>Chose author</label>
+          <select id="author_input" name="authors"> 
+              <option value="John">John</option>
+              <option value="Stepan">Stepan</option>
+              <option value="Ivan">Ivan</option>
+              <option value="Antony">Antony</option>
+            </select>
+          <button id="create_button" class="create_button">Create</button>
+      </div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>
