@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CatalogWrapper from "./Catalog.styled";
 import CatalogItem from '../../components/CatalogItem/CatalogItem';
 import Filters from '../../components/CatalogFilter/Filters';
+import Loader from '../../components/Loader/Loader';
+import { fetchSortedCars } from '../../components/fetching';
 
 
 export const handleSearch = (value, cars, setSortedCars) => {
@@ -14,22 +16,22 @@ export const handleSearch = (value, cars, setSortedCars) => {
    
   
   const Catalog = () => {
-    const [sortedCars, setSortedCars] = useState([]);
-  
+    const [sortedCars, setSortedCars] = useState();
+
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch('http://localhost:8080/api/car');
-          const data = await response.json();
-          setSortedCars(data);
+          const carsData = await fetchSortedCars();
+          setSortedCars(carsData);
         } catch (error) {
-          console.error('Помилка при отриманні даних з сервера:', error);
         }
       };
   
       fetchData();
     }, []);
-
+      if (!sortedCars) {
+        return <Loader />;
+      }
   
     return (
       <div>
